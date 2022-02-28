@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <!-- header section -->
 
     <header>
@@ -32,6 +31,13 @@
                     aria-describedby="button-addon2">
                 <button onclick="searchBtn()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
             </div>
+
+            <!-- spinner -->
+            <div  class="d-flex justify-content-center mt-5">
+                <div style="display: none;" id="spinner" class="spinner-border"  role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
 
             <!-- search result box -->
             <div class="row row-cols-4 g-4 mt-4" id="search-result-box">
